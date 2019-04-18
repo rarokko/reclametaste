@@ -1,0 +1,30 @@
+@import '../../helpers/CommonStylesheet/Common';
+@import '../../helpers/CommonStylesheet/ApiPage';
+
+.home-beer-wrapper {
+    @extend %home-api-wrapper;
+}
+
+#home-beer-top-section {
+    @include home-api-top-section('../../assets/img/beer-bg.jpg');
+}
+
+#home-beer-search {
+    @extend %home-api-search;
+}
+
+.home-beer-search-container {
+    @extend %home-api-search-container;
+}
+
+.home-beer-search-area {
+    @extend %home-api-search-area;
+}
+
+.home-beer-filter-form {
+    @extend %home-api-filter-form;
+}
+
+.home-beer-image-contain {
+    object-fit: contain !important;
+}

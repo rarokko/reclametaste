@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button render properly 1`] = `
+<button
+  className="rt-button"
+/>
+`;
+
+exports[`Grid render properly 1`] = `
+<div
+  className="rt-grid-container"
+>
+  <div
+    className="rt-grid-item"
+    key="item_0"
+  >
+    <div />
+  </div>
+  <div
+    className="rt-grid-item"
+    key="item_1"
+  >
+    <div />
+  </div>
+  <div
+    className="rt-grid-item"
+    key="item_2"
+  >
+    <div />
+  </div>
+</div>
+`;
+
+exports[`Header render properly 1`] = `
+<header>
+  <nav
+    className="rt-header-nav"
+  >
+    <div>
+      <Link
+        onClick={[Function]}
+        to="/marvel"
+      >
+        <button
+          data-active="true"
+        >
+          Marvel
+        </button>
+      </Link>
+      <Link
+        onClick={[Function]}
+        to="/beer"
+      >
+        <button
+          data-active="false"
+        >
+          Beer
+        </button>
+      </Link>
+    </div>
+    <button
+      onClick={[Function]}
+    >
+      Logout
+    </button>
+  </nav>
+</header>
+`;
+
+exports[`Input render properly 1`] = `
+<input
+  className="rt-input"
+/>
+`;
+
+exports[`Loader render properly 1`] = `
+<div
+  className="rt-loader"
+/>
+`;
+
+exports[`Select render properly 1`] = `
+<select
+  className="rt-select"
+/>
+`;

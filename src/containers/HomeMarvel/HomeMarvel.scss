@@ -1,0 +1,26 @@
+@import '../../helpers/CommonStylesheet/Common';
+@import '../../helpers/CommonStylesheet/ApiPage';
+
+.home-marvel-wrapper {
+    @extend %home-api-wrapper;
+}
+
+#home-marvel-top-section {
+    @include home-api-top-section('../../assets/img/marvel-bg.jpg');
+}
+
+#home-marvel-search {
+    @extend %home-api-search;
+}
+
+.home-marvel-search-container {
+    @extend %home-api-search-container;
+}
+
+.home-marvel-search-area {
+    @extend %home-api-search-area;
+}
+
+.home-marvel-filter-form {
+    @extend %home-api-filter-form;
+}

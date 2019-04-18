@@ -1,0 +1,16 @@
+@import '../../helpers/CommonStylesheet/Common';
+
+.rt-button {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #bfbfbf;
+    padding: 13px;
+    min-height: 47px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: $color-salmon;
+    box-sizing: border-box;
+    cursor: pointer;
+}

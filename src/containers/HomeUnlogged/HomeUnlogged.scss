@@ -1,0 +1,145 @@
+@import '../../helpers/CommonStylesheet/Common';
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// COMMON
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.home-unlogged-wrapper {
+    height: 100%;
+}
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// HEADER SECTION
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.home-unlogged-header-section {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 3;
+
+    p {
+        color: #fff;
+        text-align: center;
+    }
+}
+
+.home-unlogged-header-section .rt-flex-container {
+    padding: 15px;
+
+    & input {
+        margin-bottom: 0;
+        width: 50%;
+
+        @media (min-width: 1000px) {
+            width: 40%;
+        }
+    }
+
+    & button {
+        width: 100%;
+
+        @media (min-width: 1000px) {
+            width: 20%;
+        }
+    }
+}
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// MAIN SECTION
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#home-unlogged-main {
+    background-color: $color-salmon;
+    color: #fff;
+    flex-direction: column;
+
+    &>div:first-child {
+        justify-content: flex-end;
+    }
+
+    @media (min-width: 1000px) {
+        flex-direction: row;
+
+        &>div:first-child {
+            justify-content: flex-start;
+        }
+    }
+
+    &::before {
+        content: '';
+        background-image: url('../../assets/img/home-bg.jpg');
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.1;
+        @extend %parallax-effect;
+    }
+}
+
+.home-unlogged-main-left {
+    text-align: center;
+    z-index: 1;
+
+    @media (min-width: 1000px) {
+        text-align: left;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 1em;
+        margin-bottom: 0;
+
+        @media (min-width: 1000px) {
+            font-size: 3em;
+        }
+    }
+
+    p {
+        margin-top: 0;
+    }
+
+    span {
+        font-weight: 100;
+    }
+
+    img {
+        width: 50px;
+    }
+}
+
+.home-unlogged-main-right {
+    max-width: 250px;
+    text-align: right;
+    z-index: 1;
+
+    a {
+        margin-top: 10px;
+        font-size: 1em;
+        cursor: pointer;
+    }
+}
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// REGISTER SECTION
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#home-unlogged-register {
+    background-color: #ffdfdf;
+
+    p {
+        color: $color-salmon;
+        text-align: center;
+    }
+}
+
+#home-unlogged-register .rt-flex-item {
+    align-items: center;
+}
+
+#home-unlogged-register h2 {
+    color: $color-salmon;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}

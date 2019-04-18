@@ -1,0 +1,52 @@
+@import '../../helpers/CommonStylesheet/Common';
+
+.rt-header-nav {
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+    @media #{$min-big-screen} {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &>:last-child {
+        font-size: 1em;
+        padding: 7px;
+        position: absolute; 
+        bottom: -42px;
+        border-radius: 0px 0px 10px 10px;
+        z-index: 5;
+        
+        @media #{$min-big-screen} {
+            order: 0;
+            font-size: 1.5em;
+            bottom: -52px;
+            right: 0;
+        }
+    }
+
+    button {
+        border: none;
+        color: $color-salmon;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 15px;
+        margin: 10px;
+        background-color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    button[data-active=true] {
+        background-color: $color-salmon;
+        color: #ffffff;
+    }
+
+    button:hover {
+        background-color: #e8e8e8;
+    }
+}

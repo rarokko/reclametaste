@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Request insert beer likes 1`] = `undefined`;
+
+exports[`Request insert marvel likes 1`] = `undefined`;
+
+exports[`Request remove beer likes 1`] = `undefined`;
+
+exports[`Request remove marvel likes 1`] = `undefined`;
+
+exports[`Request the same userid on login 1`] = `undefined`;
